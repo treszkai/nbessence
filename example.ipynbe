@@ -1,0 +1,34 @@
+- code: |-
+    foo = 3
+    bar = "baz"
+- markdown: |-
+    Let's print `foo`, "foo", """foo"""
+    ```
+    """foo"""
+    ```
+- raw: |-
+    This a raw cell.
+- raw: |-
+    This a raw cell, not executed.
+- code: |-
+    print(foo)
+  output: |-
+    3
+- code: |-
+    This a code cell, not executed, with output copied from previous cell.
+  output: |-
+    3
+- code: |-
+    print("foo'bar'")
+  output: |-
+    foo'bar'
+- code: |-
+    print('foo')
+    print('"bar"')
+  output: |-
+    foo
+    "bar"
+- code: |-
+    This a new code cell.
+- markdown: |-
+    This an unexecuted markdown cell.
