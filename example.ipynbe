@@ -12,20 +12,20 @@
     This a raw cell, not executed.
 - code: |-
     print(foo)
-  output: |-
+  stdout: |-
     3
 - code: |-
     This a code cell, not executed, with output copied from previous cell.
-  output: |-
+  stdout: |-
     3
 - code: |-
     print("foo'bar'")
-  output: |-
+  stdout: |-
     foo'bar'
 - code: |-
     print('foo')
     print('"bar"')
-  output: |-
+  stdout: |-
     foo
     "bar"
 - code: |-

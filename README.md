@@ -22,7 +22,7 @@ _Coming soon!_
     if 1:
         line2 = 'bar'
     print(line1, line2)
-  output: |-
+  stdout: |-
     "foo"
     'bar'
 - markdown: |-

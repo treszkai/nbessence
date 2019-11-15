@@ -19,7 +19,7 @@ def print_cell(cell: dict, file):
     if cell_type == 'code':
         print_block('code', cell['source'], file)
         try:
-            print_block('output', cell['outputs'][0]['text'], file, begin=False)
+            print_block('stdout', cell['outputs'][0]['text'], file, begin=False)
         except IndexError:
             pass
     elif cell_type == 'markdown':
