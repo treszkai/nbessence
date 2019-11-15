@@ -1,8 +1,8 @@
 # NBessence
 
-Store in Git only what matters.
+Store in Git only what matters. An ipynb essence is a valid YAML file, with `.ipynbe` extension.
 
-Usage:
+### Usage
 
 a) Convert a notebook to its essence:
 ```bash
@@ -14,6 +14,25 @@ b) Convert the essence back to a full-fledged notebook:
 
 _Coming soon!_
 
-### Limitations:
+### Example output
+
+```yaml
+- code: |-
+    line1 = "foo"
+    if 1:
+        line2 = 'bar'
+    print(line1, line2)
+  output: |-
+    "foo"
+    'bar'
+- markdown: |-
+    something
+    bar
+- raw: |-
+    line 1
+    line 2
+```
+
+### Limitations
 
 For now we can only store output from the `stdout`. No `stderr`, no images.
